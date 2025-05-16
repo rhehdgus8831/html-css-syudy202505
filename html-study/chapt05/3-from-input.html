@@ -11,6 +11,28 @@
 
 <form action="#">
 
+<!--label input과 동기화   -->
+
+<!-- type 필드 종류
+text 기본 텍스트 입력
+( placeholder max,minlength 입력 가능한 문자 수 size 폭 value 초기값)
+password 비밀번호 입력
+email 이메일 주소 입력
+tel 전화번호 입력
+url 웹 주소 입력
+search 검색어 입력
+number 숫자 입력 (min 최소값 max 최대값 step 증/감 간격 value 초기값)
+range 슬라이더 컨트롤
+date 날짜
+time 시간
+datetime-local 날짜 시간 동시 선택
+month,week 월과 주 선택
+checkbox 체크박스
+radio 라디오 버튼 (여러개 중 하나 선택)
+file 파일 업로드
+-->
+
+
     <label for="name">이름: </label>
     <input id="name" type="text" placeholder="이름을 입력하세요." value="김똘똘" disabled>
 
@@ -76,6 +98,8 @@
     <br>
     <!--   실습용으로 줄바꾸는데 br 쓰는 중 나중에는 css로 바꿔야함! -->
 
+<!-- select 옵션 선택 상자 -->
+
     <select name="coffe">
 
     <option value="americano">아메리카노</option>
@@ -85,12 +109,14 @@
     </select>
 
 <!--    type 안쓰면 sybmit이 기본값-->
+
     <button type="button">일반버튼</button>
     <button type="submit">서버전송버튼</button>
     <button type="reset">폼리셋버튼</button>
 
 
 <!--    틀딱 방법 이제는 안씀 -->
+
     <input type="button" value="나는야버튼">
 
 </form>
