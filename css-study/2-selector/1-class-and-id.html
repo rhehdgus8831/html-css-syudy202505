@@ -17,7 +17,12 @@
     .or{
       color: orange;
     }
-
+    .big{
+      font-size: 1.5em;
+    }
+    .highlight{
+      text-shadow: 2px 2px 5px tomato;
+    }
 
   </style>
 
@@ -25,16 +30,19 @@
 
 </head>
 <body>
-<!--# 명렁어는 하나만 적용가능하지만 class는 중복 선택 즉 그룹이 가능함-->
+
+
+<!--# 명렁어는 하나만 적용 가능  class는 그룹으로 중복 적용 가능함-->
   <div>
     <ul>
-      <li id="apple">사과</li>
-      <li id="grape">포도</li>
+      <li id="apple" class="highlight">사과</li>
+      <li id="grape" class="big highlight">포도</li>
       <li class="or">오렌지</li>
     </ul>
-      <div>당근</div>
+      <div class="highlight">당근</div>
       <p>토마토</p>
-      <span class="or">오랑지</span>
+<!--    class 적용 시 띄어서 중복으로 복수 class 적용 가능-->
+      <span class="or big">오랑지</span>
   </div>
 
 
