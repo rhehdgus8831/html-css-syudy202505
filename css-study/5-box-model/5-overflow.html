@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    .parent{
+      width: 300px;
+      height: 250px;
+      /*대부분 부모의 세로 길이는 지정을 하지 않지만 특정한 경우 지정하여 사용*/
+      border: 4px solid gray;
+      margin: 50px auto;
+
+    /*  부모 길이를 자식이 넘어섰을때는 오버플로우 사용
+     scroll 스크롤 hidden 숨기기
+     auto로 설정하면 넘칠때는 스크롤 안 넘칠때는 아무것도 보이지 않음*/
+
+      overflow: auto;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background: red;
+      border: 4px solid orange;
+
+    }
+
+    .profile-image{
+      width: 150px;
+      height: 150px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      margin: 20px auto;
+
+      /*액자에 사진 맞추기*/
+      overflow: hidden;
+    }
+
+    .profile-image img{
+      width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="profile-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaiEt5GMGoEYGe0joMF1SqwUVKFyIQohY1w&s"
+         alt="오로라핑">
+  </div>
+
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+  </div>
+
+</body>
+</html>
