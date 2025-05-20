@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+
+        section{
+
+            /*마진을 활용한 x 축 정리*/
+            width: 80%;
+            border: 4px solid red;
+            margin-left: 10%;
+
+        }
+
+        section h1{
+
+            background: orange;
+            width: 60%;
+            text-align: center;
+
+            /*auto를 쓰면 widh 비율이 바꿔도 자동 비율 조절됨 오른쪽 왼쪽은 같이 써야함*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+
+            /*박스 x축 정렬 공식
+            그냥 margin 쓸꺼면 [상하] [좌우]*/
+            margin: 0 auto;
+
+        }
+
+        section h2{
+
+            background: aqua;
+            width: 70%;
+            text-align: center;
+            margin: 10px auto 0;
+
+        }
+
+
+    </style>
+
+    <style>
+
+
+        body {
+            /*margin은 박스의 여백을 준다
+            기본 값으로 body에 마진 0 주고 시작 */
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 4px solid red;
+            margin-left: 40px;
+            margin-top: 50px;
+
+
+        }
+
+        .box {
+            width: 25%;
+            height: 33.333%;
+            border: 4px solid gray;
+            background: #333;
+
+        }
+
+        .box:first-child {
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .box:last-child {
+            /*    마진 단축 속성*/
+
+            /*    4방향 전부 균일한 마진을 넣음*/
+            margin: 7px;
+
+            /*[상하] [좌우]*/
+            margin: 10px 20px;
+
+            /*[상] [좌우] [하]*/
+            margin: 10px 20px 30px;
+
+            /*12시 부터 시계 방향 [상] [우] [하] [좌]*/
+            margin: 10px 20px 30px 40px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <section>
+        <h1>안녕하세요</h1>
+        <h2>메롱메롱</h2>
+    </section>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+</body>
+</html>
