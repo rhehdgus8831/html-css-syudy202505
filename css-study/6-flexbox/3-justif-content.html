@@ -19,18 +19,20 @@
         padding: 20px 0;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+          height: 800px;
 
-        /*주축 정렬: x축 정렬
+        /*주축 정렬 (주축은 x,y축 중 기준이 되는 축) (리버스를 설정하면 시작점도 바뀜)
         space-evenly  양옆까지 마진 o
         space-between 양옆 마진 x
         */
-        justify-content: space-between;
+        justify-content: space-around;
 
 
       }
 
       .box{
-        width: 18%;
+        width: 800px;
         height: 100px;
         border: 2px solid orange;
         border-radius: 15px;

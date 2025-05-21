@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .wrapper {
+            width: 60%;
+            margin: 20px auto;
+            border: 2px solid red;
+            padding: 20px 0;
+            height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+
+            /* 주축 정렬 (주축은 x,y축 중 기준이 되는 축) (리버스를 설정하면 시작점도 바뀜)
+        space-evenly  양옆까지 마진 o
+        space-between 양옆 마진 x
+        */
+            justify-content: center;
+
+
+            /*교차축 정렬*/
+            /*특징: 모든 행들이 하나의 그룹으로 모여서 움직인다*/
+            /*align-content: space-between;*/
+
+
+            /*특징: 행별로 따로 따로 그룹을 만들어 움직인다.*/
+            align-items: center;
+        /*    stretch 자식 높이가 오토*/
+
+
+
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+
+
+
+            border: 2px solid orange;
+            border-radius: 15px;
+            font-size: 40px;
+
+            /*text 중앙정렬 (높이 값 모르면 귀찮아짐 아래 공식으로 ㄱㄱ)*/
+            /*text-align: center;*/
+            /*line-height: 100px;*/
+
+            /*text 중앙정렬 df jc:c ai:c*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+
+        }
+
+
+
+
+        .center-item{
+            width: 50%;
+            height: 50%;
+            border: 3px dashed blue;
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="center-item">
+
+
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+
+</body>
+</html>
