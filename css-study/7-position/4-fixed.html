@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+        body{
+            margin: 0;
+            height: 3000px;
+
+        }
+
+        header {
+            background: #ffffff;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*absolite를 걸면 가로길이 기본값 100%가 해제됨(수동으로 다시 걸어야함)*/
+            width: 100%;
+            top: 0px;
+            z-index: 9999;
+
+            /*무조건 뷰포트 기준으로 고정*/
+            position: fixed;
+        }
+        header .logo {
+            font-size: 40px;
+            padding: 0;
+            margin: 20px 20px 30px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            display: flex;
+            margin-right: 20px;
+        }
+        header nav ul li {
+            margin-right: 30px;
+        }
+        main{
+            padding-top: 100px;
+        }
+        .ad-banner{
+            width: 150px;
+            height: 600px;
+            overflow: hidden;
+            position: absolute;
+            top: 250px;
+            right: 100px;
+
+        }
+        .ad-banner img{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">로고</h1>
+        <nav>
+            <ul>
+                <li>소개</li>
+                <li>커뮤니티</li>
+                <li>자료실</li>
+                <li>회원가입</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>어쩌고 저쩌고 나불나불</p>
+    </main>
+
+    <aside class="ad-banner">
+        <img src="https://i.pinimg.com/236x/d2/1d/f3/d21df33fad0e4c93e84a48a903d48490.jpg" alt="광고이미지">
+    </aside>
+
+
+</body>
+</html>
