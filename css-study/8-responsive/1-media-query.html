@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .container {
+            background: lightblue;
+            padding: 20px;
+            font-size: 22px;
+            display: flex;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin-right: 10px;
+        }
+        /*800에서는  백그라운드를 코랄색으로 보여줘*/
+        @media (max-width: 800px){
+            .container{
+                background: lightcoral;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+        }
+
+        /*650 밑에서는 회전 시켜라*/
+        /*@media (max-width: 650px) {*/
+        /*    .box {*/
+        /*        transform: rotate(45deg);*/
+        /*    }*/
+        /*}*/
+        600 밑에서는 세로로 보여줘
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--  .container>.box{박스 $}*5-->
+    <div class="container">
+        <div class="box">박스 1</div>
+        <div class="box">박스 2</div>
+        <div class="box">박스 3</div>
+        <div class="box">박스 4</div>
+        <div class="box">박스 5</div>
+    </div>
+</body>
+</html>
