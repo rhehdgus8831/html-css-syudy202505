@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+  <style>
+      .box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 50px;
+
+        /*hover 말고 원본에 걸어야함*/
+        /*transition: 1s;*/
+
+
+        /*transition-property: background, width;*/
+        /*transition-duration: 3s, 1s;*/
+
+        transition-property: all;
+        transition-duration: 3000ms;
+        transition-delay: 0.5s;
+
+        /*  균일한 속도 linear*/
+        transition-timing-function: linear;
+      }
+
+      .box:hover{
+        width: 300px;
+        background: greenyellow;
+      }
+
+
+  </style>
+
+
+
+</head>
+<body>
+     <div class="box"></div>
+</body>
+</html>
