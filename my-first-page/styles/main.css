@@ -357,7 +357,126 @@ footer ul li:nth-child(2) span {
     font-size: 52px;
 }
 
+/*큰 테블릿 반응형 디자인*/
+/*1024px 미만 */
 
+@media (max-width: 1025px) {
+    /*반응형은 원본보다 점수가 같거나 높아야됨 */
+    section.visual{
+        height:60vh ;
+    }
+    header .gnb{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+    section.visual .txt{
+        font-size: 24px;
+    }
+    main .main-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .main-text{
+        margin-top: 100px;
+        width: 60%;
+    }
+    main .main-text::before
+    , main .main-text::after
+    {
+        display: none;
+    }
+    main .main-text p {
+        margin-top: 100px;
+        width: 60%;
+        text-align: justify;
+    }
+
+    main .main-text p span {
+        text-align: center;
+    }
+    main .project .bottom{
+        flex-wrap: wrap;
+    }
+    main .project .bottom li{
+        width: 45%;
+        margin-bottom: 30px;
+
+    }
+
+}
+
+/* 작은 휴대폰 반응형 디자인 */
+/* 375px이하 */
+@media (max-width: 375px) {
+
+    body {
+        width: 100vw;
+    }
+    header {
+        padding: 15px;
+    }
+    header .intro,
+    header .menu-open .menu-txt,
+    section.content .partners,
+    section.content .contact
+    {
+        display: none;
+    }
+    header .logo img {
+        height: 40px;
+    }
+    section.visual .txt {
+        font-size: 14px;
+    }
+    section.visual .txt h3 {
+        font-size: 20px;
+    }
+    main {
+        padding: 50px 0;
+    }
+    main .main-text {
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    main .main-text h3 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    main .main-text p {
+        text-align: justify;
+    }
+    main .main-text p span {
+        font-size: 15px;
+    }
+    main .project {
+        margin-top: 50px;
+    }
+    main .project .top {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    main .project .top h3 {
+        font-size: 20px;
+    }
+    main .project .top h3 br {
+        display: none;
+    }
+    main .project .top a {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    main .project .bottom {
+        flex-direction: column;
+    }
+    main .project .bottom li {
+        width: 90%;
+        height: 250px;
+        margin: 0 auto 20px;
+    }
+}
 
 
 
