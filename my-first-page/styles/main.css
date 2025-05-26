@@ -306,8 +306,56 @@ main .partners ul li img:hover{
     opacity: 1;
 }
 
+/*contact style*/
+
+main .contact{
+    w90%;
+    background: url("../img/contact.jpg")
+        no-repeat center/cover fixed;
+    padding: 220px 0;
+}
+main .contact .inner{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.4;
+}
+main .contact .inner .tel{
+    font-size: 58px;
+    font-weight: 700;
+    margin: 50px 0;
+}
 
 
+/* footer */
+footer {
+    background: #1b1b1b;
+    color: #999;
+    padding: 0 80px 80px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li:nth-child(2) {
+    color: #eee;
+    font-size: 16px;
+    line-height: 2;
+}
+footer ul li:nth-child(2) span {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #999;
+}
+
+#go-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #ffffff;
+    font-size: 52px;
+}
 
 
 
